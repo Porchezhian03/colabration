@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern E-Commerce Admin Panel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f6f9;
+    }
+    .sidebar {
+      width: 250px;
+      background: linear-gradient(180deg, #0d6efd, #375a7f);
+      color: white;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 15px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      transition: background 0.3s;
+    }
+    .sidebar a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    .main {
+      flex-grow: 1;
+      overflow-y: auto;
+    }
+    .navbar {
+      background-color: white;
+      border-bottom: 1px solid #ddd;
+    }
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h2 {
+      margin-top: 20px;
+      font-weight: 600;
+    }
+    .dark-mode {
+      background-color: #1e1e2f !important;
+      color: #f8f9fa !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar d-flex flex-column p-3">
+    <h4 class="text-center mb-4">📦 Admin Panel</h4>
+    <a href="#products">🛍 Product Management</a>
+    <a href="#orders">📄 Order Management</a>
+    <a href="#analytics">📊 Analytics</a>
+    <a href="#settings">⚙ User Settings</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <nav class="navbar navbar-expand navbar-light px-4 py-3">
+      <div class="container-fluid">
+        <span class="navbar-brand fw-semibold">Dashboard Overview</span>
+        <button id="toggleMode" class="btn btn-outline-primary">Toggle Dark Mode</button>
+      </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+ 
